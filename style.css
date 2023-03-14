@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* HEADER */
+.header {
+    position: fixed;  
+    top: 0;  
+    z-index: 100; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.6875rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.nav-menu div {
+    padding: 1.3125rem 2.4375rem;
+}
+
+.nav-menu div:hover {
+    cursor: pointer;
+    background-color: #CCCCCC;
+}
+
+/* MAIN */
+.main {
+    margin-top: 3.6875rem;
+}
+
+.up-content {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/background.png);
+    width: 100%;
+    height: 33.1875rem;
+}
+
+.project-for-interview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.5rem;
+}
+
+.project-for-interview-title {
+    font-style: italic;
+    color: #EBF90A;
+    font-size: 48px;
+}
+
+.project-for-interview-container-button {
+    width: fit-content;
+    align-self: center;
+    padding: 1.25rem 5rem;
+    border-radius: .625rem;
+    border: 0;
+}
+
+.project-for-interview-container-button:hover {
+    cursor: pointer;
+}

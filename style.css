@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -12,6 +16,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 3.6875rem;
+    background-color: #ffffffb4;
 }
 
 .nav-menu {
@@ -47,6 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 6.5rem;
+    height: 20.6875rem;
 }
 
 .project-for-interview-title {
@@ -56,13 +62,282 @@ body {
 }
 
 .project-for-interview-container-button {
-    width: fit-content;
+    width: 17.75rem;
+    height: 3.8125rem;
     align-self: center;
     padding: 1.25rem 5rem;
     border-radius: .625rem;
     border: 0;
+    transition: width 2s, height 2s;
 }
 
 .project-for-interview-container-button:hover {
     cursor: pointer;
+    width: 26.625rem;
+    height: 5.75rem;
+    background-color: #B1B1B2;
+}
+
+.our-disciplines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.disciplines-list {
+    display: flex;
+    margin-top: 4.375rem;
+    margin: 4.375rem 0 2.125rem 0;
+    gap: 1.25rem;
+    width: 80%;
+    justify-content: center;
+}
+
+.discipline-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6.25rem;
+    width: 17.0625rem;
+    border-radius: .625rem;
+    padding: 0 1rem 4.25rem 1rem;
+    box-shadow: 1px 1px 7px #b1b1b1b9;
+}
+
+.discipline-container:hover {
+    cursor: pointer;
+    background-color:#EDE1E1;
+}
+
+.discipline-img {
+    width: 17.5625rem;
+    height: 17.5625rem;
+}
+
+.disciplines-title {
+    margin-top:2.9375rem;
+    font-size: 2rem;
+}
+
+.disciplines-text {
+    margin-top: 4.375rem;
+}
+
+.discipline-name {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.discipline-description {
+    text-align: justify;
+}
+
+.some-text-container {
+    width: 100%;
+    background: linear-gradient(#B6EAF7, #CDE33C);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.some-text-title {
+    margin-top: 2.8125rem;
+    font-size: 2rem;
+}
+
+.some-text-description-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 6.4375rem;
+}
+
+.calculator-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator-title {
+    margin-top: 2.9375rem;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 2.25rem 0 1.8125rem 0;
+    width: 24rem;
+    height: 21.625rem;
+    background-color: #C4C4C4;
+    border-radius: .625rem;
+    gap: 1.25rem;
+    padding: 0.5rem;
+
+	box-shadow: 0 0 0 2px #000, 
+              0 0 0 3px #FFF,
+              0 0 0 5px #000;
+}
+
+.calculator-buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 23px 19px;
+}
+
+.calculator-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#FFFFFF;
+    width: 6.25rem;
+    height: 2.1875rem;
+    cursor: pointer;
+}
+
+.calculator-result {
+    width: 18.75rem;
+    height: 2.25rem;
+    border-radius: .3125rem;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3.1875rem;
+    background-color: #000000;
+    color:#FFFFFF;
+}
+
+.footer span:first-child {
+    margin-left: 4.5rem;
+}
+
+.footer span:last-child {
+    margin-right: 10.125rem;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        width: 100vw;
+        height: 15rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+    
+    .nav-menu div:hover {
+        width: 100vh;
+        text-align: center;
+    }
+
+    .main {
+        margin-top: 15rem;
+    }
+
+    .up-content {
+        width: 100vw;
+        height: 29.375rem;
+    }
+
+    .project-for-interview-container {
+        height: 14.5rem;
+    }
+
+    .project-for-interview-title {
+        font-size: 1.7rem;
+    }
+
+    .project-for-interview-container-button {
+        width: 15.375rem;
+        height: 2.625rem;
+        padding: 0;
+    }
+    
+    .project-for-interview-container-button:hover {
+        cursor: pointer;
+        width: 18.625rem;
+        height: 3.75rem;
+        background-color: #B1B1B2;
+    }
+
+    .disciplines-title {
+        /* font-size: 1.7rem; */
+    }
+
+    .discipline-description {
+        padding-bottom: .9375rem;
+    }
+
+    .disciplines-text {
+        margin-top: 0;
+        padding: 0 0.5rem;
+        /* font-size: 0.8rem; */
+        text-align: center;
+    }
+
+    .disciplines-list {
+        flex-direction: column;
+        margin-top: 0;
+        gap: 2.25rem;
+        margin: 4.375rem 0 3.3125rem 0;
+    }
+
+    .disciplines-list {
+        align-items: center;
+    }
+    
+    .discipline-container {
+        /* width: 14rem; */
+        padding: 0 1rem 0 1rem;
+    }
+    
+    .discipline-img {
+        /* width: 14rem;
+        height: 14rem; */
+    }
+
+    .some-text-title {
+        margin-top: 3.8125rem;
+    }
+
+    .some-text-description-container {
+        flex-direction: column-reverse;
+        margin-bottom: 3.6875rem;
+    }
+
+    .calculator {
+        width: 20rem;
+        height: 36.625rem;
+        gap: 3.375rem;
+    }
+
+    .calculator-buttons-container {
+        gap: 1.4375rem 2.4375rem;
+    }
+
+    .footer {
+        height: 4.75rem;
+    }
+
+    .footer span:first-child {
+        width: 55%;
+        margin-left: 2.5rem;
+    }
+
+    .footer span:last-child {
+        width: 27%;
+        margin-right: 1.125rem;
+    }
 }

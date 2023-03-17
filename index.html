@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +14,18 @@
 <body>
     <header class="header">
         <nav class="nav-menu">
-            <div>Наверх</div>
-            <div>Наши дисциплины</div>
-            <div>Немного текста</div>
-            <div>Калькулятор</div>
+            <a href="#top">
+                <div>Наверх</div>
+            </a>
+            <a href="#our-discipline">
+                <div>Наши дисциплины</div>
+            </a>
+            <a href="#some-text">
+                <div>Немного текста</div>
+            </a>             
+            <a href="#calculator">
+                <div>Калькулятор</div>
+            </a> 
         </nav>
     </header>
     <main class="main">
@@ -27,7 +35,81 @@
                 <button class="project-for-interview-container-button">Переход в никуда</button>
             </div>
         </div>
+
+        <div class="our-disciplines" id="our-discipline">
+            <h2 class="disciplines-title">Наши дисциплины</h2>
+            <p class="disciplines-text">Наши преподаватели могут вести довольно много дисциплин, представим несколько из них с коротким описанием</p>
+            <div class="disciplines-list">
+                <div class="discipline-container">
+                    <img class="discipline-img" src="img/scretch.png">
+                    <span class="discipline-name">Скретч</span>
+                    <p class="discipline-description">Подготовка к реальным языкам программирования с помощью блочного скриптинга</p>
+                </div>
+
+                <div class="discipline-container">
+                    <img class="discipline-img" src="img/front-end.png">
+                    <span class="discipline-name">Front-end</span>
+                    <p class="discipline-description">Разработка сайтов с использование HTML,CSS и JavaScript</p>
+                </div>
+
+                <div class="discipline-container">
+                    <img class="discipline-img" src="img/python.png">
+                    <span class="discipline-name">Python</span>
+                    <p class="discipline-description">Разработка программ с помощью языка Python, библиотека tkinter, изучение алгоритмов
+                    </p>
+                </div>
+
+                <div class="discipline-container">
+                    <img class="discipline-img" src="img/C.png">
+                    <span class="discipline-name">C++</span>
+                    <p class="discipline-description">Работа с языком С++, консольные программы, библиотека SFML, изучение алгоритмов
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="some-text-container" id="some-text">
+            <h2 class="some-text-title">Немного текста</h2>
+            <div class="some-text-description-container">
+                    <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Placeat, dicta quia atque ab libero nulla magnam. Fugiat asperiores vero necessitatibus quidem quis rem? Eum eaque repudiandae, odit laboriosam iusto ex.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Error exercitationem quam totam illo dolores cupiditate voluptatibus ab, est unde veniam hic fugit. Necessitatibus, quidem, a possimus sapiente tenetur pariatur molestiae. Repellendus ad magni sit quibusdam. Molestiae facilis, laborum doloremque exercitationem nobis consequuntur obcaecati delectus quos sunt maiores est consectetur autem qui. Nisi, nesciunt! Assumenda, error commodi consequatur nesciunt, soluta rerum. Eaque, dolorem adipisci, hic quo earum illo temporibus nostrum quia officiis eos perferendis cumque laboriosam iste sit ad odit dolore, aspernatur atque veniam repudiandae itaque repellat sed maiores. Rem, eum. 
+                    </p>
+                    <img src="img/logo.png">
+            </div>
+        </div>
+
+        <div class="calculator-container" id="calculator">
+            <h2 class="calculator-title">Простейнький калькулятор</h2>
+
+            <div class="calculator">
+                <input class="calculator-result" readonly>
+                <div class="calculator-buttons-container">
+                    <button onclick="calc(value)" class="calculator-button" value="1">1</button>
+                    <button onclick="calc(value)" class="calculator-button" value="2">2</button>
+                    <button onclick="calc(value)" class="calculator-button" value="3">3</button>
+                    <button onclick="calc(value)" class="calculator-button" value="4">4</button>
+                    <button onclick="calc(value)" class="calculator-button" value="5">5</button>
+                    <button onclick="calc(value)" class="calculator-button" value="6">6</button>
+                    <button onclick="calc(value)" class="calculator-button" value="7">7</button>
+                    <button onclick="calc(value)" class="calculator-button" value="8">8</button>
+                    <button onclick="calc(value)" class="calculator-button" value="9">9</button>
+                    <button onclick="calc(value)" class="calculator-button" value="0">0</button>
+                    <button onclick="calc(value)" class="calculator-button" value="+">+</button>
+                    <button onclick="calc(value)" class="calculator-button" value="-">-</button>
+                    <button onclick="calc(value)" class="calculator-button" value="*">*</button>
+                    <button onclick="calc(value)" class="calculator-button" value="/">/</button>
+                    <button onclick="calc(value)" class="calculator-button" value="="> = </button>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <span>Детская онлайн-школа программирования HELLO WORLD</span>
+        <span>Отлично, на этом сайт готов)</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
